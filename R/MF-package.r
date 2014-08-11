@@ -6,8 +6,8 @@
 #' \tabular{ll}{
 #' Package: \tab MF-package\cr
 #' Type: \tab Package\cr
-#' Version: \tab 4.3.2\cr
-#' Date: \tab 2014-01-10\cr
+#' Version: \tab 4.3.3\cr
+#' Date: \tab 2014-08-11\cr
 #' License: \tab MIT \cr
 #' LazyLoad: \tab yes\cr
 #' }
@@ -25,8 +25,7 @@
 #' # End examples
 #' #---------------------------------------------
 #' invisible()
-NA
-
+NULL
 
 
 #' @name calflung
@@ -40,7 +39,7 @@ NA
 #' \item{lesion}{Percent lung lesion, in decimal form}
 #' }
 #' @keywords datasets
-NA
+NULL
 
 
 #' @name mlesions
@@ -55,7 +54,7 @@ NA
 #' \item{les}{Percent lung lesion}
 #' }
 #' @keywords datasets
-NA
+NULL
 
 #' @name piglung
 #' @title piglung dataset
@@ -69,4 +68,4 @@ NA
 #' \item{litter}{Litter ID}
 #' }
 #' @keywords datasets
-NA
+NULL

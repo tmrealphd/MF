@@ -2,8 +2,11 @@
 \name{mfcluster-class}
 \alias{mfcluster-class}
 \title{Class mfcluster}
+\usage{
+mfcluster$new(All, bycluster, excludedClusters, call, compare)
+}
 \description{
-  Class mfcluster is created from output of function MFClus
+Class mfcluster is created from output of function MFClus
 }
 \section{Fields}{
   \itemize{ \item{\code{All: }}{vector with elements:
@@ -19,11 +22,11 @@
   naming groups compared} }
 }
 \author{
-  Marie Vendettuoli
-  \email{marie.c.vendettuoli@aphis.usda.gov}
+Marie Vendettuoli
+\email{marie.c.vendettuoli@aphis.usda.gov}
 }
 \seealso{
-  \code{\link{MFClus}}
+\code{\link{MFClus}}
 }
 \keyword{documentation}
 

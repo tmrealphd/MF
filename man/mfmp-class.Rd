@@ -2,8 +2,11 @@
 \name{mfmp-class}
 \alias{mfmp-class}
 \title{Class mfmp}
+\usage{
+mfmp$new(ci, x, what, alpha, tdist, df)
+}
 \description{
-  Class mfmp is created from output of funtion MFmp
+Class mfmp is created from output of funtion MFmp
 }
 \section{Fields}{
   \itemize{ \item{\code{ci:} }{numeric vector of point and
@@ -16,11 +19,11 @@
   }}{numeric value indicating degrees freedom} }
 }
 \author{
-  Marie Vendettuoli
-  \email{marie.c.vendettuoli@aphis.usda.gov}
+Marie Vendettuoli
+\email{marie.c.vendettuoli@aphis.usda.gov}
 }
 \seealso{
-  \code{\link{MFmp}}
+\code{\link{MFmp}}
 }
 \keyword{documentation}
 

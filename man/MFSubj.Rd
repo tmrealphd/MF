@@ -2,7 +2,7 @@
 \alias{MFSubj}
 \title{Subject components of mitigated fraction}
 \usage{
-  MFSubj(formula, data, compare = c("con", "vac"))
+MFSubj(formula, data, compare = c("con", "vac"))
 }
 \arguments{
   \item{formula}{Formula of the form \code{y ~ x}, where y
@@ -16,21 +16,20 @@
   which \code{compare[2]} is compared}
 }
 \value{
-  a \code{\link{mfcomponents-class}} data object
+a \code{\link{mfcomponents-class}} data object
 }
 \description{
-  Estimates the subject components of the mitigated
-  fraction.
+Estimates the subject components of the mitigated fraction.
 }
 \details{
-  The mitigated fraction is an estimator that quantifies an
-  intervention's effect on reducing the severity of a
-  condition. Since its units are on the probability scale,
-  it is often a good idea to accompany it with an estimator
-  on the original scale of measurement. \cr \cr The subject
-  components are the individual contributions of the
-  treated subjects to \emph{MF}, which is the average of
-  the subject components.
+The mitigated fraction is an estimator that quantifies an
+intervention's effect on reducing the severity of a
+condition. Since its units are on the probability scale, it
+is often a good idea to accompany it with an estimator on
+the original scale of measurement. \cr \cr The subject
+components are the individual contributions of the treated
+subjects to \emph{MF}, which is the average of the subject
+components.
 }
 \examples{
 x <- MFSubj(lesion ~ group, calflung)
@@ -58,11 +57,11 @@ mean(x$subj[,'mf.j'])
 # [1] 0.44
 }
 \author{
-  David Siev \email{david.siev@aphis.usda.gov}
+David Siev \email{david.siev@aphis.usda.gov}
 }
 \references{
-  Siev D. (2005). An estimator of intervention effect on
-  disease severity. \emph{Journal of Modern Applied
-  Statistical Methods.} \bold{4:500--508}
+Siev D. (2005). An estimator of intervention effect on
+disease severity. \emph{Journal of Modern Applied
+Statistical Methods.} \bold{4:500--508}
 }
 

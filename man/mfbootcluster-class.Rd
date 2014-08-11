@@ -2,9 +2,13 @@
 \name{mfbootcluster-class}
 \alias{mfbootcluster-class}
 \title{Class mfbootcluster}
+\usage{
+mfbootcluster$new(nboot, alpha, seed, compare, rng, stat, what, excludedClusters,
+call, sample)
+}
 \description{
-  Class mfbootcluster is created from output of function
-  MFClusBoot
+Class mfbootcluster is created from output of function
+MFClusBoot
 }
 \section{Fields}{
   \itemize{ \item{\code{nboot: } }{numeric value specifying
@@ -29,14 +33,14 @@
   \code{\link{mf-class}}
 }
 \author{
-  Marie Vendettuoli
-  \email{marie.c.vendettuoli@aphis.usda.gov}
+Marie Vendettuoli
+\email{marie.c.vendettuoli@aphis.usda.gov}
 }
 \seealso{
-  \code{\link{MFClusBoot}}
+\code{\link{MFClusBoot}}
 
-  Other mf: \code{\link{mf-class}},
-  \code{\link{mfboot-class}}, \code{\link{mfhlboot-class}}
+Other mf: \code{\link{mf-class}};
+\code{\link{mfboot-class}}; \code{\link{mfhlboot-class}}
 }
 \keyword{documentation}
 

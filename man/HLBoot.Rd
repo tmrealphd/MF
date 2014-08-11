@@ -2,9 +2,9 @@
 \alias{HLBoot}
 \title{Bootstrap CI for MF, HL, and Qdif}
 \usage{
-  HLBoot(formula, data, compare = c("con", "vac"), b = 100,
-    B = 100, alpha = 0.05, hpd = TRUE, bca = FALSE,
-    return.boot = FALSE, trace.it = FALSE, seed = NULL)
+HLBoot(formula, data, compare = c("con", "vac"), b = 100, B = 100,
+  alpha = 0.05, hpd = TRUE, bca = FALSE, return.boot = FALSE,
+  trace.it = FALSE, seed = NULL)
 }
 \arguments{
   \item{formula}{Formula of the form \code{y ~ x +
@@ -40,19 +40,19 @@
   \item{seed}{initial seed value. Ignored.}
 }
 \value{
-  a \code{\link{mfhlboot-class}} data object
+a \code{\link{mfhlboot-class}} data object
 }
 \description{
-  Estimates bootstrap confidence intervals for MF, HL, and
-  Qdif.
+Estimates bootstrap confidence intervals for MF, HL, and
+Qdif.
 }
 \details{
-  Estimates bootstrap confidence intervals for the
-  mitigated fraction (MF), Hodge-Lehmann estimator (HL),
-  and the difference of medians and quartiles (Qdif). The
-  Hodges-Lehmann estimator is the media difference; it
-  assumes that the two distributions have the same shape
-  and differ by a constant shift.
+Estimates bootstrap confidence intervals for the mitigated
+fraction (MF), Hodge-Lehmann estimator (HL), and the
+difference of medians and quartiles (Qdif). The
+Hodges-Lehmann estimator is the media difference; it
+assumes that the two distributions have the same shape and
+differ by a constant shift.
 }
 \examples{
 HLBoot(lesion~group,calflung)
@@ -86,19 +86,18 @@ HLBoot(lesion~group,calflung)
 #  Q75 -0.168000 -0.168000 -0.3858500  0.023975
 }
 \author{
-  David Siev \email{david.siev@aphis.usda.gov}
+David Siev \email{david.siev@aphis.usda.gov}
 }
 \references{
-  Hodges JL, Lehmann EL, (1963). Estimates of location
-  based on rank tests. \emph{Annals of Mathematical
-  Statistics.} \bold{34:598--611}. \cr \cr Siev D, (2005).
-  An estimator of intervention effect on disease severity.
-  \emph{Journal of Modern Applied Statistical Methods.}
-  \bold{4:500--508}. \cr \cr Efron B, Tibshirani RJ.
-  \emph{An Introduction to the Bootstrap.} Chapman and
-  Hall, New York, 1993.
+Hodges JL, Lehmann EL, (1963). Estimates of location based
+on rank tests. \emph{Annals of Mathematical Statistics.}
+\bold{34:598--611}. \cr \cr Siev D, (2005). An estimator of
+intervention effect on disease severity. \emph{Journal of
+Modern Applied Statistical Methods.} \bold{4:500--508}. \cr
+\cr Efron B, Tibshirani RJ. \emph{An Introduction to the
+Bootstrap.} Chapman and Hall, New York, 1993.
 }
 \seealso{
-  \code{\link{mfhlboot-class}}
+\code{\link{mfhlboot-class}}
 }
 

@@ -2,10 +2,14 @@
 \name{mfhlboot-class}
 \alias{mfhlboot-class}
 \title{Class mfhlboot}
+\usage{
+mfhlboot$new(nboot, alpha, seed, compare, rng, sample, MFstat, HLstat,
+QDIFstat, QXstat, QYstat)
+}
 \description{
-  class for data objects produced by HLBoot, contains class
-  mf with addtional fields \emph{MFstat, HLstat, QDIFstat,
-  QXstat, QYstat}
+class for data objects produced by HLBoot, contains class
+mf with addtional fields \emph{MFstat, HLstat, QDIFstat,
+QXstat, QYstat}
 }
 \section{Fields}{
   \itemize{ \item{\code{nboot: } }{numeric value specifying
@@ -37,15 +41,15 @@
   \code{\link{mf-class}}
 }
 \author{
-  Marie Vendettuoli
-  \email{marie.c.vendettuoli@aphis.usda.gov}
+Marie Vendettuoli
+\email{marie.c.vendettuoli@aphis.usda.gov}
 }
 \seealso{
-  \code{\link{HLBoot}}
+\code{\link{HLBoot}}
 
-  Other mf: \code{\link{mf-class}},
-  \code{\link{mfboot-class}},
-  \code{\link{mfbootcluster-class}}
+Other mf: \code{\link{mf-class}};
+\code{\link{mfboot-class}};
+\code{\link{mfbootcluster-class}}
 }
 \keyword{documentation}
 

@@ -2,10 +2,9 @@
 \alias{MFClusBoot}
 \title{Boostrap MF CI from clustered data}
 \usage{
-  MFClusBoot(formula, data, compare = c("con", "vac"),
-    boot.cluster = TRUE, boot.unit = FALSE, b = 100, B =
-    100, alpha = 0.05, hpd = TRUE, return.boot = FALSE,
-    trace.it = FALSE)
+MFClusBoot(formula, data, compare = c("con", "vac"), boot.cluster = TRUE,
+   boot.unit = FALSE, b = 100, B = 100, alpha = 0.05, hpd = TRUE,
+   return.boot = FALSE, trace.it = FALSE)
 }
 \arguments{
   \item{formula}{Formula of the form \code{y ~ x +
@@ -43,27 +42,26 @@
   FALSE}
 }
 \value{
-  a \code{\link{mfbootcluster-class}} data object
+a \code{\link{mfbootcluster-class}} data object
 }
 \description{
-  Estimates bootstrap confidence intervals for the
-  mitigated fraction from clustered or stratified data.
+Estimates bootstrap confidence intervals for the mitigated
+fraction from clustered or stratified data.
 }
 \details{
-  Resamples the data and produces bootstrap confidence
-  intervals. Equal tailed intervals are estimated by the
-  percentile method. Highest density intervals are
-  estimated by selecting the shortest of all possible
-  intervals.
+Resamples the data and produces bootstrap confidence
+intervals. Equal tailed intervals are estimated by the
+percentile method. Highest density intervals are estimated
+by selecting the shortest of all possible intervals.
 }
 \note{
-  If input data contains more than two levels of treatment,
-  rows associated with unused treatment levels will be
-  removed. \cr Factor levels for treatments not present in
-  the input data will be ignored. \cr Clusters with missing
-  treatments will be excluded. See
-  \code{\link{mfbootcluster-class}} or use \code{trace.it}
-  to identify excluded clusters.
+If input data contains more than two levels of treatment,
+rows associated with unused treatment levels will be
+removed. \cr Factor levels for treatments not present in
+the input data will be ignored. \cr Clusters with missing
+treatments will be excluded. See
+\code{\link{mfbootcluster-class}} or use \code{trace.it} to
+identify excluded clusters.
 }
 \examples{
 \dontrun{
@@ -104,13 +102,13 @@ MFClusBoot(lesion ~ group + cluster(litter), piglung, boot.unit = T, b = 12, B =
 }
 }
 \author{
-  David Siev \email{david.siev@aphis.usda.gov}
+David Siev \email{david.siev@aphis.usda.gov}
 }
 \references{
-  Siev D. (2005). An estimator of intervention effect on
-  disease severity. \emph{Journal of Modern Applied
-  Statistical Methods.} \bold{4:500--508}\cr \cr Efron B,
-  Tibshirani RJ. \emph{An Introduction to the Bootstrap.}
-  Chapman and Hall, New York, 1993.
+Siev D. (2005). An estimator of intervention effect on
+disease severity. \emph{Journal of Modern Applied
+Statistical Methods.} \bold{4:500--508}\cr \cr Efron B,
+Tibshirani RJ. \emph{An Introduction to the Bootstrap.}
+Chapman and Hall, New York, 1993.
 }
 

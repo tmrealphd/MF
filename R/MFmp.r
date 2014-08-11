@@ -28,11 +28,15 @@ MFmp <- function(formula = NULL, data = NULL, compare = c("con", "vac"), x = NUL
 
 	if(!is.null(formula) & !is.null(data)){
 		byCluster <- MFClus(formula = formula, data = data, compare = compare)$byCluster[, 'mf']
-		x <- rev(c(table(byCluster)))
+        ##
+        byCluster <- factor(byCluster)
+        levels(byCluster) <- c('-1', '1', '0')
+        x <- table(byCluster)[c('1', '0', '-1')]
+
 	} else if(is.null(x)) {
 		stop('Need to supply either formula and data or x = vector')
 	}
-	
+
 	N <- sum(x)
 	p <- x/N
 	V <- (diag(p) - t(t(p)) %*% t(p)) / N

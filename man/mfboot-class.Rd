@@ -2,10 +2,13 @@
 \name{mfboot-class}
 \alias{mfboot-class}
 \title{Class mfboot}
+\usage{
+mfboot$new(nboot, alpha, seed, compare, rng, sample, stat, stuff)
+}
 \description{
-  class for data objects produced by MFBoot, contains class
-  mf with the two additional fields \emph{stat} and
-  \emph{stuff}.
+class for data objects produced by MFBoot, contains class
+mf with the two additional fields \emph{stat} and
+\emph{stuff}.
 }
 \section{Fields}{
   \itemize{ \item{\code{nboot: } }{numeric value specifying
@@ -24,15 +27,15 @@
   \code{\link{mf-class}}
 }
 \author{
-  Marie Vendettuoli
-  \email{marie.c.vendettuoli@aphis.usda.gov}
+Marie Vendettuoli
+\email{marie.c.vendettuoli@aphis.usda.gov}
 }
 \seealso{
-  \code{\link{MFBoot}}
+\code{\link{MFBoot}}
 
-  Other mf: \code{\link{mf-class}},
-  \code{\link{mfbootcluster-class}},
-  \code{\link{mfhlboot-class}}
+Other mf: \code{\link{mf-class}};
+\code{\link{mfbootcluster-class}};
+\code{\link{mfhlboot-class}}
 }
 \keyword{documentation}
 

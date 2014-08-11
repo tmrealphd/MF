@@ -1,4 +1,4 @@
-#' @nord
+
 setMethod('print', 'mfboot', function(x, ...){
 	cat(x$nboot, "bootstrap samples")
     cat("\n", paste(100 * (1 - x$alpha), "%", sep = ""), "confidence interval\n\n")
@@ -8,10 +8,10 @@ setMethod('print', 'mfboot', function(x, ...){
 	})
 	
 	
-#' @nord
+
 setMethod('show', 'mfboot', function(object){print(object)})
 
-#' @nord
+
 setMethod('print', 'mfhlboot', function(x, ...){
     cat("\n", x$nboot, " bootstrap samples", sep='')
     cat("\n", paste(100 * (1-x$alpha), "%", sep = ""), " confidence intervals", sep='')
@@ -29,19 +29,19 @@ setMethod('print', 'mfhlboot', function(x, ...){
     cat('\n')
 	})
 
-#' @nord
+
 setMethod('show', 'mfhlboot', function(object){print(object)})
 
-#' @nord
+
 setMethod('print', 'mfmp', function(x, ...){
 	cat(x$what, '\n')
 	print(x$ci)
 	})
 
-#' @nord
+
 setMethod('show', 'mfmp', function(object){print(object)})
 
-#' @nord
+
 setMethod('print', 'mfbootcluster', function(x, ...){
     cat('\n\n', x$what, sep = '')
     cat('\nComparing', x$compare[2], 'to', x$compare[1], '\n')
@@ -56,10 +56,10 @@ setMethod('print', 'mfbootcluster', function(x, ...){
     cat('\n')
 	})
 	
-#' @nord
+
 setMethod('show', 'mfbootcluster', function(object){print(object)})
 
-#' @nord
+
 setMethod('print', 'mfcluster', function(x, ...){
     cat('\nComparing', x$compare[2], 'to', x$compare[1],'\n')
     cat('\nMF =', x$All$mf, '\n')
@@ -78,10 +78,10 @@ setMethod('print', 'mfcluster', function(x, ...){
     cat('\n')
 })
 
-#' @nord
+
 setMethod('show', 'mfcluster', function(object){print(object)})
 
-#' @nord
+
 setMethod('print', 'mfcomponents', function(x, ...){
     cat('\nMF =', x$mf, 'comparing', x$compare[2], 'to', x$compare[1], '\n')
     subj <- data.frame(x$subj)
@@ -101,5 +101,5 @@ setMethod('print', 'mfcomponents', function(x, ...){
     cat('\n')
 	})
 
-#' @nord
+
 setMethod('show', 'mfcomponents', function(object){print(object)})

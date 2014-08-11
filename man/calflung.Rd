@@ -8,7 +8,7 @@
 \item{lesion}{Percent lung lesion, in decimal form}
 }}
 \description{
-  something here
+something here
 }
 \keyword{datasets}
 
