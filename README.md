@@ -9,5 +9,5 @@ From **within R**
 
 ```
 require(devtools)
-install_github(repo = "MF", username = "ABS-dev")
+install_github("ABS-dev/MF")
 ```
